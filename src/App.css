@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Foldit:wght@100..900&family=Ga+Maamli&family=Jersey+10&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=New+Amsterdam&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+FR+Moderne:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+font-family: "PT Sans Narrow";
+font-size: 20px;
+background-color: #fff;
+}
+.navbar {
+    max-width: 2000px;
+    display: flex;
+    align-items: columns;
+    background-color: #caede2;
+    justify-content:space-between;
+    align-items: flex-end;
+    border-radius: 5px;
+}
+div
+.navbar ul {
+    display: flex;
+    align-items: columns; 
+    justify-content: space-between; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ img {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 25px;
 }
+.navbar h4 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+h2, h4, p{
+    text-align: center;
+    
+}
+p:hover {
+    margin: 2rem, 10%;
   }
+.text{
+    margin: 50px 150px;
+    padding: 50px;
+    transition: margin 2s linear 1s;
 }
+.vacation-wrapper h2 {
+margin-top: 50px;
+margin-bottom: 100px;
+background-image: linear-gradient(to right, #fff, #b3f7f7, #f3c4c4);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+    max-width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px 35%;
+    
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h1:hover {
+    width: 400px;
+    transform: rotate(50deg);
+    background-color: rgb(114, 181, 221);
+    transition: width 2s, background-color 2s;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.site {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+   height: 80vh;  
+   gap: 5px;
+   border-bottom: 1px solid #f5eeee;
+}
+   
+.left-section{
+flex: 1;
+}
+.right-section{
+    flex: 1;
+    padding-top: 70px;
+}
+.right-section:hover {
+    background-color: #919997;
+ }
+.footer-section{
+    height: 10vh;
+    background-color:#3a3e3d;
+    font-weight: 600;
+}
+
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    list-style: none;
+    background-color:#3a3e3d;
+}
+.media li{
+    background-color:#3a3e3d;
+    color: #fff;
+}
+
+@media(max-width:600px){
+    body{
+        font-family: "poppins";
+        font-size: 14px;
+        background-image: linear-gradient(to left, #fff, left, #b3f7f7, #f3c4c4);
+        }
+        .navbar {
+            max-width: 1500px;
+            display: flex;
+            align-items: column;
+            background-color: #caede2;
+            font-family:'Lucida Sans', 'Lucida Grande', Verdana, ;
+            justify-content:space-between;
+            align-items: flex-end;
+            border-radius: 5px;
+        }
+        div
+        ul {
+            display: flex;
+            align-items: columns; 
+            justify-content: space-between; 
+        }
+        .navbar li {
+            margin-right: 30px;
+            }
+         img {
+            height: 20px;
+            width: 20px;
+            border-radius: 15px;
+            padding: 5px;
+            margin-left: 25px;
+        }
+        .navbar h4 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        h1,h2, h4, p{
+            text-align: center;
+        }
+        .text{
+            margin: 50px 150px;
+            padding: 50px;
+        }
+        .vacation-wrapper h1 {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        background-image: linear-gradient(right, #fff, left, #b3f7f7, #f3c4c4);
+        
+        }
+        
+        
+        .site {
+            justify-content: center; 
+        
+           border-bottom: 1px solid #f5eeee;
+        }
+        .left-section{
+        margin-bottom: 5px;
+        }
+        .right-section{
+            flex: 1;
+            padding-top: 70px;
+        }
+        .footer-section{
+            height: 10vh;
+            width: auto;
+            background-color:#3a3e3d;
+            font-weight: 600;
+        }
+        .about-me,
+        .contacts,
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+        }
+        
+        
+        
 }
